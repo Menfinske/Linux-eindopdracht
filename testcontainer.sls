@@ -12,4 +12,4 @@ docker.io:
 
 docker: 
   cmd.run: 
-    - name: docker run ubuntu
+    - name: docker run -t  ubuntu
