@@ -4,4 +4,4 @@
 
 curl -L https://bootstap.saltstack.com -o install_salt.sh
 sh install_salt.sh
-
+sh -c "echo '10.0.7.97 salt' >> /etc/hosts"
