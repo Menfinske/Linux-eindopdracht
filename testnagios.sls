@@ -6,6 +6,7 @@ nagios-nrpe-server:
       - pkg: nagios-nrpe-server
     - watch: 
       - file: /usr/local/nagios/etc/servers/host.cfg
+      - file: /etc/nagios/nrpe.cfg
 
 /usr/local/nagios/etc/servers/host.cfg:
   file.append: 
@@ -20,3 +21,7 @@ nagios-nrpe-server:
                 notification_interval 30
                 notification_period 24x7
         }
+/etc/nagios/nrpe.cfg: 
+  file.replace: 
+    - pattern: ',::1'
+    - repl: ',10.0.7.97'
