@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#This file will install Salt-master
+
+curl -L https://bootstrap.saltstack.com -o install_salt.sh
+sh install install_salt.sh 
