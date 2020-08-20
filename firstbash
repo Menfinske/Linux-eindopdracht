@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#Get and install Ubuntu updates
+apt-get update
+apt-get upgrade
+
